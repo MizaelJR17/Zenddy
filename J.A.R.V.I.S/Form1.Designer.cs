@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Zendd));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.barraDeAudio = new System.Windows.Forms.ProgressBar();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -44,12 +44,13 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // progressBar1
+            // barraDeAudio
             // 
-            this.progressBar1.Location = new System.Drawing.Point(246, 301);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(100, 23);
-            this.progressBar1.TabIndex = 1;
+            this.barraDeAudio.Location = new System.Drawing.Point(246, 301);
+            this.barraDeAudio.Maximum = 50;
+            this.barraDeAudio.Name = "barraDeAudio";
+            this.barraDeAudio.Size = new System.Drawing.Size(100, 23);
+            this.barraDeAudio.TabIndex = 1;
             // 
             // Zendd
             // 
@@ -58,12 +59,13 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.BackgroundImage = global::J.A.R.V.I.S.Properties.Resources.pngegg__5_;
             this.ClientSize = new System.Drawing.Size(587, 447);
-            this.Controls.Add(this.progressBar1);
+            this.Controls.Add(this.barraDeAudio);
             this.Controls.Add(this.pictureBox1);
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.SystemColors.Window;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Zendd";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Zenddy";
             this.TransparencyKey = System.Drawing.Color.Green;
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -75,7 +77,7 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.ProgressBar barraDeAudio;
     }
 }
 
